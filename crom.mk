@@ -31,6 +31,10 @@ PRODUCT_LOCALES := en_US de_DE zh_CN zh_TW cs_CZ nl_BE nl_NL en_AU en_GB en_CA e
 # phone
 $(call inherit-product, vendor/crom/config/common_phone.mk)
 
+# bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/crom/prebuilt/common/media/xxhdpi/BOOTANIMATION-1080x1920.zip:system/media/bootanimation.zip
+
 # products
 PRODUCT_DEVICE := hammerhead
 PRODUCT_BRAND := google
